@@ -1,0 +1,16 @@
+services:
+  fastify_pratice_mysql:
+    image: mysql:9.0
+    container_name: fastify_pratice-db
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_0900_bin
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: fastify_pratice
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./logs:/var/log/mysql
+      - ./database:/docker-entrypoint-initdb.d
