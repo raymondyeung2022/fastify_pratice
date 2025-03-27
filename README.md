@@ -44,6 +44,7 @@ Node指定バージョンインストール:
 
 `nvm use 22`
 
+
 環境構築手順:
 
 1. docker compose up -d
@@ -56,3 +57,11 @@ Node指定バージョンインストール:
 
 5. 問題が無ければ完成！
 
+
+データベースでのデータ確認
+
+1. `docker exec -it fastify_pratice-db bash`
+
+2. `mysql -pmysql`
+
+3. userテーブルのデータを確認する
