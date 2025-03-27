@@ -32,7 +32,7 @@ Fastify API練習用リポジトリ
 
 2. 以下のコマンドはUbuntu-22.04 LTSで実行する
 
-Docker指定バージョンインストール:
+Docker指定バージョンインストール (英語):
 
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
