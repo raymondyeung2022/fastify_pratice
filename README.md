@@ -18,6 +18,10 @@ Fastify API練習用リポジトリ
 
 ・NPM 10.9.2
 
+・Fastify 5.2.2
+
+・@fastify/mysql: 5.0.2
+
 ・VSCode拡張機能: REST Client (Ubuntu-22.04 LTSにインストールする)
 
 他のバージョンは多分大丈夫ですが、ビルドの問題を避けたいように、上記のバージョンがオススメ
@@ -44,9 +48,11 @@ Node指定バージョンインストール:
 
 1. docker compose up -d
 
-2. ルートディレクトリに「npm run dev」を実行する
+2. ルートディレクトリに「npm install」を実行する
+ 
+3. ルートディレクトリに「npm run dev」を実行する
 
-3. VSCodeで「test.http」を開いて、各APIエンドポイントを実行する
+4. VSCodeで「test.http」を開いて、各APIエンドポイントを実行する
 
-4. 問題が無ければ完成！
+5. 問題が無ければ完成！
 
