@@ -19,7 +19,8 @@ Fastify API練習用リポジトリ
 2. 以下のコマンドはUbuntu-22.04 LTSで実行する
 
 Docker指定バージョンインストール:
-1. DockerオフィシャルGPGキー追加
+1. DockerオフィシャルGPGキー追加:
+   
 `
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -28,7 +29,8 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 `
 
-3. aptソースにリポジトリ追加
+2. aptソースにリポジトリ追加
+   
 `
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
@@ -37,12 +39,14 @@ echo \
 sudo apt-get update
 `
 
-4. 指定するバージョンダウンロード
+3. 指定するバージョンダウンロード
+
 `
 sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
 `
 
 Node指定バージョンインストール:
+
 `
 nvm install 22
 nvm use 22
