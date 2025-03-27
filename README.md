@@ -28,6 +28,7 @@ Node指定バージョンインストール:
 
 `
 nvm install 22
+
 nvm use 22
 `
 
